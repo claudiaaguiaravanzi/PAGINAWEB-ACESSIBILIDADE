@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Educação Financeira</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="p-3 bg-light shadow-sm">
+  <div class="container d-flex justify-content-between align-items-center">
+    
+    <!-- Logo à esquerda -->
+    <a href="#inicio">
+      <img src="https://cdn-icons-png.flaticon.com/512/18253/18253701.png" 
+           alt="Logo Educação Financeira" 
+           class="nav-img"
+           style="width:120px; height:auto;">
+    </a>
+
+    <!-- Menu centralizado -->
+    <ul class="nav justify-content-center flex-grow-1">
+      <li class="nav-item"><a class="nav-link fw-bold" href="#inicio">Início</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold" href="#topicos">Tópicos</a></li>
+      <li class="nav-item"><a class="nav-link fw-bold" href="#contato">Contato</a></li>
+    </ul>
+
+    <!-- Botão de acessibilidade à direita -->
+    <div id="acessibilidade" class="menu-acessibilidade ms-auto">
+      <button id="botao-acessibilidade" class="btn btn-outline-dark fw-bold">
+        <i class="bi bi-universal-access"></i> Acessibilidade
+      </button>
+
+      <!-- Opções ocultas -->
+      <div id="opcoes-acessibilidade" class="opcoes-acessibilidade oculto mt-2 d-flex gap-2">
+        <button id="aumentar-fonte" class="btn btn-outline-dark btn-sm" title="Aumentar fonte">
+          A<sup>+</sup>
+        </button>
+        <button id="diminuir-fonte" class="btn btn-outline-dark btn-sm" title="Diminuir fonte">
+          A<sup>-</sup>
+        </button>
+        <button id="alterna-contraste" class="btn btn-outline-dark btn-sm" title="Alternar contraste">
+          <i class="bi bi-adjust"></i>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<main class="container my-5">
+
+    <section id="inicio" class="text-center my-5">
+        <h1 class="display-4 fw-bold">Educação Financeira</h1>
+        <p class="lead">Educação financeira é o processo de adquirir conhecimento para gerir o dinheiro de forma consciente, equilibrada e inteligente, visando o bem-estar, a prosperidade e a construção de um futuro seguro. Envolve o aprendizado sobre como ganhar, gerenciar, investir e gastar dinheiro, tomando decisões estratégicas que respeitem o orçamento e os objetivos de longo prazo, promovendo o consumo consciente e evitando dívidas. </p>
+        <a href="#topicos" class="btn btn-primary btn-lg mt-3">Conhecer tópicos</a>
+    </section>
+
+    <section id="topicos" class="my-5">
+        <div class="row text-center">
+
+            <!-- 1. Planejamento Orçamentário -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="https://hscontabil.com.br/wp-content/uploads/2023/04/IMAGEM-BLOG-DPG-71.jpg" class="card-img-top" alt="Planejamento Orçamentário">
+                    <div class="card-body">
+                        <h3 class="card-title">Planejamento Orçamentário</h3>
+                        <button class="btn btn-outline-primary btn-ver-conteudo" data-target="conteudo-orcamento">Ver Conteúdo</button>
+                        <p id="conteudo-orcamento" class="oculto mt-2">
+                            Aprender a organizar suas finanças mensais, controlando gastos e receitas para manter equilíbrio financeiro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Reserva de Emergência -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="https://riconnect.rico.com.vc/wp-content/uploads/sites/4/2020/01/como-guardar-dinheiro-19-passos-para-economizar.jpg?w=1000" class="card-img-top" alt="Reserva de Emergência">
+                    <div class="card-body">
+                        <h3 class="card-title">Reserva de Emergência</h3>
+                        <button class="btn btn-outline-primary btn-ver-conteudo" data-target="conteudo-reserva">Ver Conteúdo</button>
+                        <p id="conteudo-reserva" class="oculto mt-2">
+                            Guardar uma quantia financeira para situações inesperadas e emergências, evitando dívidas.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Definição de Objetivos Financeiros -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="https://www.queroquitar.com.br/assets/images/optimized/4-pilares-educacao-financeira-img-blog-3.png" class="card-img-top" alt="Objetivos Financeiros">
+                    <div class="card-body">
+                        <h3 class="card-title">Definição de Objetivos Financeiros</h3>
+                        <button class="btn btn-outline-primary btn-ver-conteudo" data-target="conteudo-objetivos">Ver Conteúdo</button>
+                        <p id="conteudo-objetivos" class="oculto mt-2">
+                            Estabelecer metas claras para gastar, poupar ou investir, permitindo planejamento e foco financeiro.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Investimento Inteligente -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <img src="https://portalaquivale.com.br/wp-content/uploads/2024/07/Sicoob-tipos-de-investimentos-grafico-mostrando-os-percentuais-e-os-tipos-de-investimentos-da-Sicoob-1024x586-1.jpg" class="card-img-top" alt="Investimento Inteligente">
+                    <div class="card-body">
+                        <h3 class="card-title">Investimento Inteligente</h3>
+                        <button class="btn btn-outline-primary btn-ver-conteudo" data-target="conteudo-investir">Ver Conteúdo</button>
+                        <p id="conteudo-investir" class="oculto mt-2">
+                            Investir com conhecimento e estratégia, fazendo o dinheiro trabalhar para alcançar objetivos futuros.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="my-5">
+        <h2 class="text-center mb-4">Entre em Contato</h2>
+        <div class="col-md-6 mx-auto">
+            <form>
+                <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Digite seu email">
+                </div>
+                <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="mensagem" rows="4" placeholder="Escreva sua mensagem"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+</main>
+
+<footer class="text-center p-3 bg-light mt-5">
+    <p>&copy; 2025 Educação Financeira - Projeto Fictício</p>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+<script src="sketch.js"></script>
+
+</body>
+</html>
+
+<section id="contato" class="py-5" style="background-color:#f5f5f5;">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">Entre em Contato</h2>
+    
+    <p><i class="fas fa-envelope"></i> contato@email.com</p>
+    <p><i class="fas fa-phone"></i> (11) 99999-9999</p>
+    <p><i class="fab fa-whatsapp"></i> WhatsApp</p>
+  </div>
+</section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educação Financeira</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome para os ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <!-- Seu CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
